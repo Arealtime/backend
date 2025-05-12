@@ -10,8 +10,11 @@
     "license": "MIT",
     "require": {
         "php": "^8.2",
+        "arealtime/exception-log": "*",
+        "arealtime/module-generator": "*",
         "laravel/framework": "^12.0",
-        "laravel/tinker": "^2.10.1"
+        "laravel/tinker": "^2.10.1",
+        "livewire/livewire": "^3.6"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
@@ -75,5 +78,14 @@
         }
     },
     "minimum-stability": "stable",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "repositories": [
+    {
+        "type": "path",
+        "url": "packages/Arealtime/*",
+        "options": {
+            "symlink": true
+        }
+    }
+]
 }

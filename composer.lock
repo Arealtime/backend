@@ -4,8 +4,101 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "adb4b680144df947b976ddb89b6572b1",
+    "content-hash": "66fa1a57cd5167a735fcc1223c50bbfa",
     "packages": [
+        {
+            "name": "arealtime/exception-log",
+            "version": "1.0.0",
+            "dist": {
+                "type": "path",
+                "url": "packages/Arealtime/ExceptionLog",
+                "reference": "34c3fa7c2c27042d5c7de799c5ba641581261123"
+            },
+            "require": {
+                "php": "^8.3"
+            },
+            "type": "module",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Arealtime\\ExceptionLog\\App\\Providers\\ExceptionLogServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Arealtime\\ExceptionLog\\App\\": "src/app/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Arash Taghavi",
+                    "email": "arash.taghavi69@gmail.com"
+                }
+            ],
+            "homepage": "https://github.com/arealtime/exception-log",
+            "keywords": [
+                "artisan",
+                "clean architecture",
+                "generator",
+                "laravel",
+                "module"
+            ],
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "arealtime/module-generator",
+            "version": "1.0.0",
+            "dist": {
+                "type": "path",
+                "url": "packages/Arealtime/ModuleGenerator",
+                "reference": "575e7b162c7a232e1877bcbd07bdbd1b3c830d1d"
+            },
+            "require": {
+                "php": "^8.3"
+            },
+            "type": "module",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Arealtime\\ModuleGenerator\\App\\Providers\\ModuleGeneratorServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Arealtime\\ModuleGenerator\\App\\": "src/app/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Arash Taghavi",
+                    "email": "arash.taghavi69@gmail.com"
+                }
+            ],
+            "description": "An Artisan command package for generating Laravel modules following a clean, modular architecture.",
+            "homepage": "https://github.com/arealtime/module-generator",
+            "keywords": [
+                "artisan",
+                "clean architecture",
+                "generator",
+                "laravel",
+                "module"
+            ],
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
         {
             "name": "brick/math",
             "version": "0.12.3",
@@ -2005,6 +2098,82 @@
                 }
             ],
             "time": "2024-12-08T08:18:47+00:00"
+        },
+        {
+            "name": "livewire/livewire",
+            "version": "v3.6.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/livewire/livewire.git",
+                "reference": "56aa1bb63a46e06181c56fa64717a7287e19115e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/livewire/livewire/zipball/56aa1bb63a46e06181c56fa64717a7287e19115e",
+                "reference": "56aa1bb63a46e06181c56fa64717a7287e19115e",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "^10.0|^11.0|^12.0",
+                "illuminate/routing": "^10.0|^11.0|^12.0",
+                "illuminate/support": "^10.0|^11.0|^12.0",
+                "illuminate/validation": "^10.0|^11.0|^12.0",
+                "laravel/prompts": "^0.1.24|^0.2|^0.3",
+                "league/mime-type-detection": "^1.9",
+                "php": "^8.1",
+                "symfony/console": "^6.0|^7.0",
+                "symfony/http-kernel": "^6.2|^7.0"
+            },
+            "require-dev": {
+                "calebporzio/sushi": "^2.1",
+                "laravel/framework": "^10.15.0|^11.0|^12.0",
+                "mockery/mockery": "^1.3.1",
+                "orchestra/testbench": "^8.21.0|^9.0|^10.0",
+                "orchestra/testbench-dusk": "^8.24|^9.1|^10.0",
+                "phpunit/phpunit": "^10.4|^11.5",
+                "psy/psysh": "^0.11.22|^0.12"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "Livewire": "Livewire\\Livewire"
+                    },
+                    "providers": [
+                        "Livewire\\LivewireServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Livewire\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Caleb Porzio",
+                    "email": "calebporzio@gmail.com"
+                }
+            ],
+            "description": "A front-end framework for Laravel.",
+            "support": {
+                "issues": "https://github.com/livewire/livewire/issues",
+                "source": "https://github.com/livewire/livewire/tree/v3.6.3"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/livewire",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-04-12T22:26:52+00:00"
         },
         {
             "name": "monolog/monolog",
